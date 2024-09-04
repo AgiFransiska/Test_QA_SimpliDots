@@ -60,10 +60,10 @@ Tujuan dari testing ini adalah untuk melihat function "mark as favorite" pada we
 
 
 - **Test Data:**  
-  1. User Data
+  User Data
   - Email: user@example.com
   - Password: password123
-  2. Valid Language Options**
+  Valid Language Options
   - Indonesia
   - English
 
@@ -87,7 +87,9 @@ Tujuan dari testing ini adalah untuk melihat function "mark as favorite" pada we
 
 | Test Case ID | Test Case Description | Pre-conditions | Test Steps | Expected Result | Status | Remarks |
 |--------------|-----------------------|----------------|------------|-----------------|--------|---------|
-| TC001        | Verifikasi bahwa tombol "Mark as Favorite" tidak dapat diklik atau nonaktif saat pengguna tidak login | Pengguna tidak atau belum login | 1 Arahkan untuk membuka web https://www.themoviedb.org/ pada browser <br> 2. Cari film (misalnya, "Inception"). <br> 3. Coba tandai film tersebut sebagai favorit | Tombol "Tandai sebagai Favorit" seharusnya meminta pengguna untuk masuk atau dinonaktifkan, mencegah pengguna menambahkan film ke favorit. | Pass | [Catatan tambahan] |
+| TC001        | Verifikasi bahwa tombol "Mark as Favorite" tidak dapat diklik atau nonaktif saat pengguna tidak login | Pengguna tidak atau belum login | 1. Arahkan untuk membuka web https://www.themoviedb.org/ pada browser <br> 2. Cari film (misalnya, "Inception"). <br> 3. Coba tandai film tersebut sebagai favorit | Tombol "Tandai sebagai Favorit" seharusnya meminta pengguna untuk masuk atau dinonaktifkan, mencegah pengguna menambahkan film ke favorit. | Pass | [Catatan tambahan] |
+| TC002        | Verifikasi bahwa pengguna dapat menandai film sebagai favorit setelah masuk | Pengguna berhasil dan sudah login | 1. Arahkan untuk membuka web https://www.themoviedb.org/ pada browser <br> 2. Cari film (misalnya, "Inception"). <br> 3. Coba tandai film tersebut sebagai favorit | Film tersebut akan berhasil ditambahkan ke daftar favorit pengguna dan tombolnya akan berubah untuk menunjukkan bahwa film tersebut telah ditandai sebagai favorit. | Pass | [Catatan tambahan] |
+| TC003        | Verifikasi bahwa film yang ditandai sebagai favorit muncul di daftar film favorit pengguna | Pengguna telah menandai film sebagai favorit | 1. Buka halaman profil pengguna <br> 2. Navigasi ke bagian "Favorit". <br> 3. Verifikasi bahwa film yang ditandai muncul di daftar favorit Film yang ditandai sebagai favorit akan muncul di daftar favorit pengguna. | Film yang ditandai sebagai favorit akan muncul dalam daftar favorit pengguna. | Pass | [Catatan tambahan] |
 
 - **Test Data:**  
   1. User Data
