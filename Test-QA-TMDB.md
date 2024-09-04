@@ -54,8 +54,8 @@ Tujuan dari testing ini adalah untuk melihat function "mark as favorite" pada we
 | Test Case ID | Test Case Description | Pre-conditions | Test Steps | Expected Result | Status | Remarks |
 |--------------|-----------------------|----------------|------------|-----------------|--------|---------|
 | TC001        | Verifikasi bahwa pengguna dapat mengubah bahasa ke Bahasa Indonesia    | Pengguna sudah login (opsional) | 1. Arahkan untuk membuka web https://www.themoviedb.org/ pada browser <br> 2. Cari menu pemilihan bahasa dan klik (terletak di navbar antara icon "+" dan "masuk"). <br> 3. Klik pada menu pemilihan bahasa <br> 4. Pilih "Bahasa Indonesia" dari daftar bahasa yang tersedia | Bahasa website berubah menjadi Bahasa Indonesia. Semua label, menu, dan konten kini harus ditampilkan dalam Bahasa Indonesia. | Pass/Fail | [Catatan tambahan] |
-| TC002        | Memastikan bahasa tetap tersetting pada bahasa indonesia setelah di refresh  | Bahasa tetap tersetting ke bahasa Indonesia | 1. Refresh halaman website <br> 2. Arahkan ke untuk membuka berbagai bagian situs web (misalnya, Beranda, Film, Acara TV) | [Hasil yang diharapkan] | Pass/Fail | [Catatan tambahan] |
-| ...          | ...                    | ...            | ...        | ...             | ...    | ...     |
+| TC002        | Memastikan bahasa tetap tersetting pada bahasa indonesia setelah di refresh  | Bahasa tetap tersetting ke bahasa Indonesia | 1. Buka halaman pengaturan akun <br> 2. Arahkan ke untuk membuka berbagai bagian situs web (misalnya, Beranda, Film, Acara TV) | [Hasil yang diharapkan] | Pass/Fail | [Catatan tambahan] |
+| TC003        | Verifikasi bahwa perubahan bahasa tidak memengaruhi pengaturan akun pengguna  | Pengguna sudah login dan bahasanya diatur ke Bahasa Indonesia | 1. Refresh halaman website <br> 2. Periksa detail akun | [Hasil yang diharapkan] | Pass/Fail | [Catatan tambahan] |
 
 - **Test Data:**  
   Deskripsi singkat mengenai test data yang akan digunakan.
