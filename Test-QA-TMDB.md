@@ -53,12 +53,19 @@ Tujuan dari testing ini adalah untuk melihat function "mark as favorite" pada we
 
 | Test Case ID | Test Case Description | Pre-conditions | Test Steps | Expected Result | Status | Remarks |
 |--------------|-----------------------|----------------|------------|-----------------|--------|---------|
-| TC001        | Verifikasi bahwa pengguna dapat mengubah bahasa ke Bahasa Indonesia    | Pengguna sudah login (opsional) | 1. Arahkan untuk membuka web https://www.themoviedb.org/ pada browser <br> 2. Cari menu pemilihan bahasa dan klik (terletak di navbar antara icon "+" dan "masuk"). <br> 3. Klik pada menu pemilihan bahasa <br> 4. Pilih "Bahasa Indonesia" dari daftar bahasa yang tersedia | Bahasa website berubah menjadi Bahasa Indonesia. Semua label, menu, dan konten kini harus ditampilkan dalam Bahasa Indonesia. | Pass/Fail | [Catatan tambahan] |
-| TC002        | Memastikan bahasa tetap tersetting pada bahasa indonesia setelah di refresh  | Bahasa tetap tersetting ke bahasa Indonesia | 1. Refresh halaman website <br> 2. Arahkan ke untuk membuka berbagai bagian situs web (misalnya, Beranda, Film, Acara TV) | [Hasil yang diharapkan] | Pass/Fail | [Catatan tambahan] |
-| TC003        | Verifikasi bahwa perubahan bahasa tidak memengaruhi pengaturan akun pengguna  | Pengguna sudah login dan bahasanya diatur ke Bahasa Indonesia | 1. Refresh halaman website <br> 2. Periksa detail akun | [Hasil yang diharapkan] | Pass/Fail | [Catatan tambahan] |
+| TC001        | Verifikasi bahwa pengguna dapat mengubah bahasa ke Bahasa Indonesia    | Pengguna sudah login (opsional) | 1. Arahkan untuk membuka web https://www.themoviedb.org/ pada browser <br> 2. Cari menu pemilihan bahasa dan klik (terletak di navbar antara icon "+" dan "masuk"). <br> 3. Klik pada menu pemilihan bahasa <br> 4. Pilih "Bahasa Indonesia" dari daftar bahasa yang tersedia | Bahasa website berubah menjadi Bahasa Indonesia. Semua label, menu, dan konten kini harus ditampilkan dalam Bahasa Indonesia. | Pass | [Catatan tambahan] |
+| TC002        | Memastikan bahasa tetap tersetting pada bahasa indonesia setelah di refresh  | Bahasa tetap tersetting ke bahasa Indonesia | 1. Refresh halaman website <br> 2. Arahkan ke untuk membuka berbagai bagian situs web (misalnya, Beranda, Film, Acara TV) | [Hasil yang diharapkan] | Pass | [Catatan tambahan] |
+| TC003        | Verifikasi bahwa perubahan bahasa tidak memengaruhi pengaturan akun pengguna  | Pengguna sudah login dan bahasanya diatur ke Bahasa Indonesia | 1. Pergi kehalaman setting account pada website <br> 2. Periksa detail akun | [Hasil yang diharapkan] | Pass | [Catatan tambahan] |
+| TC004        | Verifikasi bahwa bahasa kembali ke default (Bahasa Inggris) saat diubah kembali  | Bahasa disetel ke Bahasa Indonesia | 1. Buka menu pemilihan bahasa <br> 2. Ubah bahasa kembali ke "Bahasa Inggris" | [Hasil yang diharapkan] | Pass | [Catatan tambahan] |
+
 
 - **Test Data:**  
-  Deskripsi singkat mengenai test data yang akan digunakan.
+  1. User Data
+  - Email: user@example.com
+  - Password: password123
+  2. Valid Language Options**
+  - Indonesia
+  - English
 
 - **Execution Date:**  
   03 September 2024 sampai 05 September 2024
@@ -66,8 +73,43 @@ Tujuan dari testing ini adalah untuk melihat function "mark as favorite" pada we
 - **Tested By:**  
   Agi Fransiska
 
+  **Tujuan Test Case**
+  - Memastikan bahwa pengaturan bahasa pada website TMDb berfungsi dengan baik.
+  - Memvalidasi bahwa perubahan bahasa akan bertahan di seluruh halaman situs, meskipun halaman di-refresh atau user berpindah halaman.
+  - Mengonfirmasi bahwa perubahan bahasa tidak mempengaruhi informasi penting lainnya seperti pengaturan akun.
+
 - **Overall Status:**  
-  Hasil testing secara keseluruhan (Pass/Fail).
+  Untuk hasil dari ke 4 test case yang diujikan, semua test case berjalan dengan baik dan memberikan output sesuai dengan expected result.
+
+  ---
+
+  ## Test Case: Mark as Favorite
+
+| Test Case ID | Test Case Description | Pre-conditions | Test Steps | Expected Result | Status | Remarks |
+|--------------|-----------------------|----------------|------------|-----------------|--------|---------|
+| TC001        | Verifikasi bahwa tombol "Mark as Favorite" tidak dapat diklik atau nonaktif saat pengguna tidak login | Pengguna tidak atau belum login | 1 Arahkan untuk membuka web https://www.themoviedb.org/ pada browser <br> 2. Cari film (misalnya, "Inception"). <br> 3. Coba tandai film tersebut sebagai favorit | Tombol "Tandai sebagai Favorit" seharusnya meminta pengguna untuk masuk atau dinonaktifkan, mencegah pengguna menambahkan film ke favorit. | Pass | [Catatan tambahan] |
+
+- **Test Data:**  
+  1. User Data
+  - Email: user@example.com
+  - Password: password123
+  2. Valid Language Options**
+  - Indonesia
+  - English
+
+- **Execution Date:**  
+  03 September 2024 sampai 05 September 2024
+  
+- **Tested By:**  
+  Agi Fransiska
+
+  **Tujuan Test Case**
+  - Memastikan bahwa pengaturan bahasa pada website TMDb berfungsi dengan baik.
+  - Memvalidasi bahwa perubahan bahasa akan bertahan di seluruh halaman situs, meskipun halaman di-refresh atau user berpindah halaman.
+  - Mengonfirmasi bahwa perubahan bahasa tidak mempengaruhi informasi penting lainnya seperti pengaturan akun.
+
+- **Overall Status:**  
+  Untuk hasil dari ke 4 test case yang diujikan, semua test case berjalan dengan baik dan memberikan output sesuai dengan expected result.
 
 ---
 
